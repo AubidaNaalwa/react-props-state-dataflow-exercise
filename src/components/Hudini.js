@@ -3,9 +3,14 @@ import React, { Component } from 'react';
 class Hudini extends Component {
     constructor() {
         super()
+        this.state= {
+            show : false
+        }
     }
     render() {
-        return {/* your code here */ }
+        return this.state.show ? <span>Now you see me</span> : <span>Now you don't</span>
+            
+        
 
     }
 }

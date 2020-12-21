@@ -4,8 +4,7 @@ class Calendar extends Component {
   render() {
     return (
       <div id="calendar">
-        {/* your code here */}
-
+        {this.props.calendar.map(v => <div  key={v.day+v.time}>{v.day} @ {v.time}</div>)}
       </div>
     )
   }

@@ -3,8 +3,7 @@ import React, { Component } from 'react';
 
 class SubCompany extends Component {
   render() {
-    return {/* your code here */ }
-
+    return <h4>{this.props.name} {this.props.revenue}</h4>
   }
 }
 

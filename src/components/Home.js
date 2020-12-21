@@ -4,9 +4,15 @@ import Item from './Item';
 class Home extends Component {
 
     render() {
-        return
-        {/* your code here */ }
-
+        return (<div>
+                <div>
+                    Store
+                </div>
+                { this.props.store.map(v =><div>
+                    <Item item = {v} shouldDiscount = {this.props.shouldDiscount}/>
+                </div> )}
+           
+            </div>)
     }
 }
 

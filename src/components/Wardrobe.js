@@ -11,9 +11,9 @@ class Wardrobe extends Component {
       { type: "accessory", color: "lilac", size: "" },
     ]
 
-    return {/* your code here */ }
-
+    return wardrobe.map(c => <Article info={c} key={c.color + c.type} />)
   }
+
 }
 
 export default Wardrobe
